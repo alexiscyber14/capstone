@@ -1,3 +1,5 @@
 import './style.css';
-const navigation = require("./modules/navigation.js")
-navigation()
+
+const navigation = require('./modules/navigation.js');
+
+navigation();
