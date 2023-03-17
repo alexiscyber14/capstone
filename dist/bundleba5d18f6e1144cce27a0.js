@@ -1,6 +1,35 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/modules/navigation.js":
+/*!***********************************!*\
+  !*** ./src/modules/navigation.js ***!
+  \***********************************/
+/***/ ((module) => {
+
+var navigation = function navigation() {
+  var pev = document.querySelectorAll('.window');
+  var btx = document.querySelectorAll('.switch');
+  var palNav = function palNav(nual) {
+    pev.forEach(function (slide) {
+      slide.classList.remove('active-window');
+      btx.forEach(function (btn) {
+        btn.classList.remove('active');
+      });
+    });
+    pev[nual].classList.add('active-window');
+    btx[nual].classList.add('active');
+  };
+  btx.forEach(function (btn, i) {
+    btn.addEventListener('click', function () {
+      palNav(i);
+    });
+  });
+};
+navigation();
+module.exports = navigation;
+
+/***/ }),
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
@@ -8,6 +37,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -21,7 +51,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  background-color: white;\r\n  min-height: 98vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n/* start header css */\r\nheader {\r\n  display: flex;\r\n  margin-top: 2%;\r\n  height: 30px;\r\n  flex-direction: row;\r\n  justify-content: space-around;\r\n}\r\n\r\nheader nav {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-around;\r\n  width: 80%;\r\n  text-align: center;\r\n}\r\n\r\nheader nav li {\r\n  list-style: none;\r\n  padding: 0% 5%;\r\n}\r\n\r\nheader nav li a {\r\n  text-decoration: none;\r\n  font-size: 17px;\r\n  color: rgb(109, 109, 109);\r\n  font-weight: bold;\r\n  cursor: pointer;\r\n  font-family: sans-serif;\r\n}\r\n\r\n.active {\r\n  border-bottom: 2px solid rgb(82, 82, 82);\r\n}\r\n\r\n.circle-logo {\r\n  border: 2px solid grey;\r\n  height: 80px;\r\n  display: flex;\r\n  margin-top: -20px;\r\n  width: 80px;\r\n  border-radius: 360px;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  align-content: center;\r\n  font-size: 19px;\r\n  font-weight: bold;\r\n  box-shadow: 2px 2px 6px grey;\r\n  text-align: center;\r\n}\r\n\r\n.circle-logo span {\r\n  margin-top: 30px;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,aAAa;EACb,sBAAsB;AACxB;;AAEA,qBAAqB;AACrB;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,mBAAmB;EACnB,6BAA6B;AAC/B;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,UAAU;EACV,kBAAkB;AACpB;;AAEA;EACE,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,qBAAqB;EACrB,eAAe;EACf,yBAAyB;EACzB,iBAAiB;EACjB,eAAe;EACf,uBAAuB;AACzB;;AAEA;EACE,wCAAwC;AAC1C;;AAEA;EACE,sBAAsB;EACtB,YAAY;EACZ,aAAa;EACb,iBAAiB;EACjB,WAAW;EACX,oBAAoB;EACpB,sBAAsB;EACtB,mBAAmB;EACnB,qBAAqB;EACrB,eAAe;EACf,iBAAiB;EACjB,4BAA4B;EAC5B,kBAAkB;AACpB;;AAEA;EACE,gBAAgB;AAClB","sourcesContent":["body {\r\n  background-color: white;\r\n  min-height: 98vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n/* start header css */\r\nheader {\r\n  display: flex;\r\n  margin-top: 2%;\r\n  height: 30px;\r\n  flex-direction: row;\r\n  justify-content: space-around;\r\n}\r\n\r\nheader nav {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-around;\r\n  width: 80%;\r\n  text-align: center;\r\n}\r\n\r\nheader nav li {\r\n  list-style: none;\r\n  padding: 0% 5%;\r\n}\r\n\r\nheader nav li a {\r\n  text-decoration: none;\r\n  font-size: 17px;\r\n  color: rgb(109, 109, 109);\r\n  font-weight: bold;\r\n  cursor: pointer;\r\n  font-family: sans-serif;\r\n}\r\n\r\n.active {\r\n  border-bottom: 2px solid rgb(82, 82, 82);\r\n}\r\n\r\n.circle-logo {\r\n  border: 2px solid grey;\r\n  height: 80px;\r\n  display: flex;\r\n  margin-top: -20px;\r\n  width: 80px;\r\n  border-radius: 360px;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  align-content: center;\r\n  font-size: 19px;\r\n  font-weight: bold;\r\n  box-shadow: 2px 2px 6px grey;\r\n  text-align: center;\r\n}\r\n\r\n.circle-logo span {\r\n  margin-top: 30px;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  background-color: white;\r\n  min-height: 98vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n/* start header css */\r\nheader {\r\n  display: flex;\r\n  margin-top: 2%;\r\n  height: 30px;\r\n  flex-direction: row;\r\n  justify-content: space-around;\r\n}\r\n\r\nheader nav {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-around;\r\n  width: 80%;\r\n  text-align: center;\r\n}\r\n\r\nheader nav li {\r\n  list-style: none;\r\n  padding: 0% 5%;\r\n}\r\n\r\nheader nav li a {\r\n  text-decoration: none;\r\n  font-size: 17px;\r\n  color: rgb(109, 109, 109);\r\n  font-weight: bold;\r\n  cursor: pointer;\r\n  font-family: sans-serif;\r\n}\r\n\r\n.active {\r\n  border-bottom: 2px solid rgb(82, 82, 82);\r\n}\r\n\r\n.circle-logo {\r\n  border: 2px solid grey;\r\n  height: 80px;\r\n  display: flex;\r\n  margin-top: -20px;\r\n  width: 80px;\r\n  border-radius: 360px;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  align-content: center;\r\n  font-size: 19px;\r\n  font-weight: bold;\r\n  box-shadow: 2px 2px 6px grey;\r\n  text-align: center;\r\n}\r\n\r\n.circle-logo span {\r\n  margin-top: 30px;\r\n}\r\n\r\nmain {\r\n  margin: 6% 10%;\r\n}\r\n\r\n.window {\r\n  display: none;\r\n}\r\n\r\n.active-window {\r\n  display: flex;\r\n  padding: 1%;\r\n  background-color: white;\r\n  flex-direction: column;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;EACvB,gBAAgB;EAChB,aAAa;EACb,sBAAsB;AACxB;;AAEA,qBAAqB;AACrB;EACE,aAAa;EACb,cAAc;EACd,YAAY;EACZ,mBAAmB;EACnB,6BAA6B;AAC/B;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,6BAA6B;EAC7B,UAAU;EACV,kBAAkB;AACpB;;AAEA;EACE,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,qBAAqB;EACrB,eAAe;EACf,yBAAyB;EACzB,iBAAiB;EACjB,eAAe;EACf,uBAAuB;AACzB;;AAEA;EACE,wCAAwC;AAC1C;;AAEA;EACE,sBAAsB;EACtB,YAAY;EACZ,aAAa;EACb,iBAAiB;EACjB,WAAW;EACX,oBAAoB;EACpB,sBAAsB;EACtB,mBAAmB;EACnB,qBAAqB;EACrB,eAAe;EACf,iBAAiB;EACjB,4BAA4B;EAC5B,kBAAkB;AACpB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,WAAW;EACX,uBAAuB;EACvB,sBAAsB;AACxB","sourcesContent":["body {\r\n  background-color: white;\r\n  min-height: 98vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n/* start header css */\r\nheader {\r\n  display: flex;\r\n  margin-top: 2%;\r\n  height: 30px;\r\n  flex-direction: row;\r\n  justify-content: space-around;\r\n}\r\n\r\nheader nav {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-around;\r\n  width: 80%;\r\n  text-align: center;\r\n}\r\n\r\nheader nav li {\r\n  list-style: none;\r\n  padding: 0% 5%;\r\n}\r\n\r\nheader nav li a {\r\n  text-decoration: none;\r\n  font-size: 17px;\r\n  color: rgb(109, 109, 109);\r\n  font-weight: bold;\r\n  cursor: pointer;\r\n  font-family: sans-serif;\r\n}\r\n\r\n.active {\r\n  border-bottom: 2px solid rgb(82, 82, 82);\r\n}\r\n\r\n.circle-logo {\r\n  border: 2px solid grey;\r\n  height: 80px;\r\n  display: flex;\r\n  margin-top: -20px;\r\n  width: 80px;\r\n  border-radius: 360px;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  align-content: center;\r\n  font-size: 19px;\r\n  font-weight: bold;\r\n  box-shadow: 2px 2px 6px grey;\r\n  text-align: center;\r\n}\r\n\r\n.circle-logo span {\r\n  margin-top: 30px;\r\n}\r\n\r\nmain {\r\n  margin: 6% 10%;\r\n}\r\n\r\n.window {\r\n  display: none;\r\n}\r\n\r\n.active-window {\r\n  display: flex;\r\n  padding: 1%;\r\n  background-color: white;\r\n  flex-direction: column;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -34,6 +64,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  background-color: white;\r
   \*****************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -128,6 +159,7 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (item) {
@@ -153,6 +185,7 @@ module.exports = function (item) {
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -207,6 +240,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -300,6 +334,7 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -343,6 +378,7 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -362,6 +398,7 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -381,6 +418,7 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -451,6 +489,7 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -542,16 +581,19 @@ module.exports = styleTagTransform;
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 
+var navigation = __webpack_require__(/*! ./modules/navigation.js */ "./src/modules/navigation.js");
+navigation();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundled08dbe458188f4ee3fa6.js.map
+//# sourceMappingURL=bundleba5d18f6e1144cce27a0.js.map

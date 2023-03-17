@@ -59,3 +59,18 @@ header nav li a {
 .circle-logo span {
   margin-top: 30px;
 }
+
+main {
+  margin: 6% 10%;
+}
+
+.window {
+  display: none;
+}
+
+.active-window {
+  display: flex;
+  padding: 1%;
+  background-color: white;
+  flex-direction: column;
+}
