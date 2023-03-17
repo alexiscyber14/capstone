@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> <%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <header>
+    <nav>
+        <li><a href="/" class="circle-logo"><span>ALPO</span></a></li>
+        <li class="switch active"><a>Shows <span id="show-count"></span></a></li>
+        <li class="switch"><a>Movies</a></li>
+        <li class="switch"><a>Animations</a></li>
+    </nav>
+</header>
+<main>
+    <section class="window active-window">
+        <div id="movie-grid"></div>
+    </section>
+    
+    <section class="window">
+    movie section(not being used)
+    </section>
+        
+    <section class="window">
+    animartion section(not used)
+    </section>
+</main>
+</body>
+</html>
