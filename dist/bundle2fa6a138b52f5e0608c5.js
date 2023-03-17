@@ -150,8 +150,6 @@ var itemsList = function itemsList() {
       return show.image && show.image.medium;
     });
     shows = shows.slice(0, 10);
-    var showNumber = document.getElementById('show-count');
-    showNumber.textContent = shows.length;
     shows.forEach(function (show, index) {
       var movieContainer = document.createElement('div');
       movieContainer.className = 'movie-container';
@@ -161,6 +159,12 @@ var itemsList = function itemsList() {
       var observer = new MutationObserver(function () {
         if (document.querySelectorAll('.movie-card')) {
           // popper();
+          var countShowsOnHomePage = function countShowsOnHomePage() {
+            var movieCards = document.querySelectorAll('.movie-card');
+            var showNumber = document.getElementById('show-count');
+            showNumber.textContent = movieCards.length;
+          };
+          countShowsOnHomePage();
           observer.disconnect();
         }
       });
@@ -790,4 +794,4 @@ observer.observe(document.body, {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle38712950108db516d3cd.js.map
+//# sourceMappingURL=bundle2fa6a138b52f5e0608c5.js.map
