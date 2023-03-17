@@ -6,8 +6,6 @@ const itemsList = () => {
     .then((shows) => {
       shows = shows.filter((show) => show.image && show.image.medium);
       shows = shows.slice(0, 10);
-      const showNumber = document.getElementById('show-count');
-      showNumber.textContent = shows.length;
       shows.forEach((show, index) => {
         const movieContainer = document.createElement('div');
         movieContainer.className = 'movie-container';
@@ -47,6 +45,13 @@ const itemsList = () => {
         const observer = new MutationObserver(() => {
           if (document.querySelectorAll('.movie-card')) {
             // popper();
+            const countShowsOnHomePage = () => {
+              const movieCards = document.querySelectorAll('.movie-card');
+              const showNumber = document.getElementById('show-count');
+              showNumber.textContent = movieCards.length;
+            };
+            countShowsOnHomePage();
+
             observer.disconnect();
           }
         });
