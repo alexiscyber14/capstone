@@ -236,3 +236,13 @@ main {
   margin-bottom: 2%;
   font-size: 19px;
 }
+
+footer {
+  display: flex;
+  margin-top: 100vh;
+  height: 40px;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: lightgray;
+  border: black solid;
+}
