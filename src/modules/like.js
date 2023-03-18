@@ -47,7 +47,7 @@ const liking = () => {
           count + 1;
           paragraph.textContent = count;
           sendLikesTotal(itemId, count);
-          location.reload()
+          window.location.reload();
         });
       });
     });
