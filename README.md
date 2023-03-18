@@ -39,6 +39,8 @@ Javascript
 **Link to online version of My Portfolio**
 <a href="https://alexiscyber14.github.io/capstone/dist/"> visit live link</a>
 
+<a href="https://www.loom.com/share/97ef3fb2bec3426187eaee52c35592cc">watch us explain the project here</a>
+
 ## 💻 Getting Started <a name="getting-started"></a>
 To get a local copy up and running, follow these steps.
 Git clone https://github.com/alexiscyber14/capstone.git
