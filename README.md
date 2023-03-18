@@ -65,8 +65,8 @@ Clone this repository to your desired folder:
 -Alex Senyondo
 - https://github.com/alexiscyber14
 
--Hiwot bayissa
-https://github.com/hiwina
+-Esther mumo
+https://github.com/mumo-esther
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -89,7 +89,7 @@ If you like this project you can give it a ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would linke to thank <a href="https://github.com/hiwina">Hiwot bayissa</a> for her contribution on this project.
+I would linke to thank <a href="https://github.com/mumo-esther">Esther mumo</a> for her contribution on this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
