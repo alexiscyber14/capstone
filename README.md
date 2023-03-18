@@ -24,7 +24,7 @@
  <a name="about-project"></a>
 
 
-**Awesome books** is a project with the following objectives;
+**APIS CAPSTONE PROJECT** is a project with the following objectives;
 - Understand how to work with objects in javascript and pasring them in html
 - Understanding how to refactor code.
 - Understand how to use modules
@@ -37,7 +37,7 @@ Javascript
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 **Link to online version of My Portfolio**
-coming soon:
+<a href="https://alexiscyber14.github.io/capstone/dist/"> visit live link</a>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 To get a local copy up and running, follow these steps.
