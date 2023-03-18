@@ -12,8 +12,6 @@ navigation();
 
 list();
 
-
-
 const observer = new MutationObserver(() => {
   if (document.querySelectorAll('.movie-card')) {
     liking();
