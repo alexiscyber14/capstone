@@ -40,11 +40,13 @@ const liking = () => {
     buttons.forEach((button, index) => {
       const paragraph = paragraphs[index];
       const itemId = `click-counter-${index + 1}`;
+
       getLikesTotal(itemId).then((likesTotal) => {
         let count = parseInt(likesTotal);
         paragraph.textContent = count;
+
         button.addEventListener('click', () => {
-          count + 1;
+          count++;
           paragraph.textContent = count;
           sendLikesTotal(itemId, count);
         });

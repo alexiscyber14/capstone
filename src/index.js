@@ -12,12 +12,10 @@ navigation();
 
 list();
 
-forms();
-
 const observer = new MutationObserver(() => {
   if (document.querySelectorAll('.movie-card')) {
     liking();
-
+    forms();
     observer.disconnect();
   }
 });
