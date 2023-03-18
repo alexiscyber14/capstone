@@ -9,6 +9,6 @@ test('updates comment count', () => {
   // call the function with mock data
   commentCountElement.innerHTML = `${mockCommentsLength}`;
 
-  //we check that the comment count is updated correctly
+  // we check that the comment count is updated correctly
   expect(mockCommentCountElement.innerHTML).toBe(`${mockCommentsLength}`);
 });
