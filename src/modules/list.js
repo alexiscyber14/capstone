@@ -1,4 +1,5 @@
-// const popper = require('./popup.js');
+const popper = require('./popup.js');
+
 const itemsList = () => {
   const movieGrid = document.querySelector('#movie-grid');
   fetch('https://api.tvmaze.com/shows')
@@ -20,16 +21,15 @@ const itemsList = () => {
                 <button class="open-popup">Comments</button>
                 <section class="popup">
                 <button class="close-popup">close</button>
-                <div class="pop-container">
-
+                <h1 class="">i am a pop up</h1>
                 <img src="${show.image.original}" alt="">
                 <h2 class="pop-title">${show.name}</h2>
                 <p class="pop-summary">${show.summary.replace(/<\/?p>/g, '').replace(/<\/?b>/g, '')}</p>
-                <div class="commentor">
+                <div>
                 <h3>Comments (<span class="comment-count"></span>)</h3>
                 <ul class="comments-list"></ul>
                 </div>
-                <div class="forma">
+                <div>
                 <h3>Add a comment</h3>
                 <form data-item-id="item1">
                 <label for="username1">Username:</label>
@@ -38,7 +38,6 @@ const itemsList = () => {
                 <input type="text" id="comment1" class="comment" name="comment" required>
                 <button type="submit">Submit</button>
               </form>
-                </div>
                 </div>
               </section> 
                 </div>
@@ -53,7 +52,7 @@ const itemsList = () => {
               showNumber.textContent = movieCards.length;
             };
             countShowsOnHomePage();
-
+            popper();
             observer.disconnect();
           }
         });
