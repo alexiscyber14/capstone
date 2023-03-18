@@ -1,4 +1,5 @@
 const popper = require('./popup.js');
+
 const itemsList = () => {
   const movieGrid = document.querySelector('#movie-grid');
   fetch('https://api.tvmaze.com/shows')
@@ -53,7 +54,7 @@ const itemsList = () => {
               showNumber.textContent = movieCards.length;
             };
             countShowsOnHomePage();
-               popper();
+            popper();
             observer.disconnect();
           }
         });
