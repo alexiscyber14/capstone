@@ -17,6 +17,7 @@
       "eol-last": "off",
       "no-empty":"off",
       "radix":"off",
+      "no-plusplus":"off",
       "no-unused-expressions":"off",
       "prefer-const":"off",
       "no-use-before-define":"off",
